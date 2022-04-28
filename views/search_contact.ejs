@@ -1,0 +1,29 @@
+<% if(contacts.length==0) { %>
+    <h1>No search found.</h1>
+<% } else { %>
+
+    <div id="contact-container">
+        <table>
+            <tr >
+                <td class="head"><i class="fas fa-user"></i> Name</td>
+                <td class="head"><i class="fas fa-envelope"></i> Email</td>
+                <td class="head"><i class="fas fa-phone-alt"></i> Phone</td>
+            </tr>
+            
+            <% for(let i of contacts){%>
+                <tr>
+                    <td class="row1"><%= i.name%></td>
+                    <td class="row1"><%= i.email%></td>
+                    <td class="row1"><%= i.phone%></td>
+                </tr>
+                <!-- <tr>
+                    <td class="row2" colspan="3"><a href="/update/<%= i.id%>"><button><i class="fas fa-user-edit"></i> Update Contact</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="/delete-contact?name=<%=i.name%>&&phone=<%=i.phone%>&&id=<%=i.id%>"><button><i class="far fa-trash-alt"></i> Delete</button></a></td>
+                </tr> -->
+            <%}%>
+        </table>
+    </div>
+<% } %>
+
+<br>
+<a id="return" href="/"><button><i class="fas fa-address-card"></i> Return to home page</button></a>

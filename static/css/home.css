@@ -1,0 +1,139 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+#contact-button input{
+    color: rgba(255, 255, 255, 0.795);
+    background-color:rgb(6, 33, 90);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+#contact-container{
+    width: 61%;
+    margin: 0 auto;
+}
+
+.contact{
+    display: flex;
+    flex-direction: space-between;
+}
+
+/* #contact-container{
+    width: 61%;
+    margin: 0 auto;
+} */
+
+
+button{
+    background-color: rgb(6, 33, 90);
+    color: rgba(255, 255, 255, 0.39);
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 11px;
+    text-decoration: center;
+    border: none;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    padding: 10px;
+}
+
+#add,#return{
+    position: relative;
+    left: 46%;
+}
+
+.row1{
+    border-top: 2px solid grey;
+}
+
+.head{
+    text-align: center;
+    font-weight: bold;
+    border-top: 2px solid grey;
+}
+
+#title{
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+#nav-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 4rem;
+    align-items: center;
+    background-color: rgb(69, 69, 190);
+    color: white;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+}
+
+#search-input{
+    border: none;
+    font-size: large;
+    height: 3rem;
+    width: 16rem;
+    border-radius: 5px;
+}
+
+
+#title a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.685);
+}
+
+#update-container,#add-container{
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+    background-color: rgb(205, 205, 245);
+    border-radius: 10px;
+}
+
+#add-form,#update-form{
+    width: 100%;
+}
+
+#add-form input, #update-form input{
+    padding: 0.7rem;
+    border-radius: 0.4rem;
+    width: 96%;
+    margin: 1rem 0;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    font-size: medium;
+}
+
+#contact-button{
+    background-color: transparent;
+    min-width: 4rem;
+    margin: 0 auto;
+    height: 3rem;
+    margin-top: 1.4rem;
+}
+
+#search-button{
+    margin-right: 20px;
+    border: none;
+    font-size: large;
+    height: 2rem;
+    color: rgba(255, 255, 255, 0.712);
+    background-color: rgba(209, 77, 44, 0.815);
+    border-radius: 5px;
+}

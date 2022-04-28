@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="/css/home.css">
+<div id="update-container">
+    <form action='/update-contact/<%= contact.id%>' id="update-form" method='POST'>
+        <div><input id="contact-name" name='name' type="text" placeholder="Enter your name" value="<%= contact.name%>" required></div>
+        <div><input id="contact-email" name='email' type="email" placeholder="Enter your email" value="<%= contact.email%>" required></div>
+        <div><input id="contact-phone" name='phone' type="number" placeholder="Enter your number" value="<%= contact.phone%>" required>
+        </div>
+        <div id="contact-button"><input type="submit" value="Update Contact"></div>
+    </form>
+</div>
